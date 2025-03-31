@@ -7,9 +7,11 @@
     transition: .5s;
     scroll-behavior: smooth;
     font-family: 'jost';
-    outline: none;
+    outline: none;    
     color: #000000;
     scroll-behavior: 0.5s;
+    animation: show 0.5s;
+
 }
 
 .container {
@@ -47,6 +49,7 @@
     src: url(../fonts/Jost-Light.ttf);
     font-weight: 300;
 }
+
 
 /* btn */
 .btn {
@@ -99,15 +102,10 @@ header {
 
 .section nav a:after {
     display: block;
-    /*превращаем его в блочный элемент*/
     content: "";
-    /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
     height: 1px;
-    /*задаём высоту линии*/
     width: 0%;
-    /*задаём начальную ширину элемента (линии)*/
     background-color: #225384;
-    /*цвет фона элемента*/
     transition: width 0.3s ease-in-out;
 }
 
@@ -123,6 +121,7 @@ header {
 .tel {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -136,6 +135,8 @@ header {
     font-size: 18px;
     font-weight: 500;
     color: rgba(21, 52, 83, 1);
+    display: flex;
+    align-items: center;
 }
 
 .banner .btn:hover {
@@ -334,8 +335,6 @@ header {
     font-size: 16px;
     color: #FF6368;
 }
-
-
 
 .price .btn {
     width: 90px;
@@ -537,6 +536,10 @@ header {
     font-size: 18px;
 }
 
+.con_card a {
+    font-size: 18px;
+}
+
 footer {
     background: white;
     width: 100%;
@@ -560,7 +563,7 @@ footer p {
     justify-content: center;
 }
 
-.regis_block{
+.regis_block {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -568,12 +571,12 @@ footer p {
     gap: 10px;
 }
 
-.regis_block a{
+.regis_block a {
     color: #05386B;
     font-weight: 500;
 }
 
-.regis_block p{
+.regis_block p {
     color: #676A6F;
 }
 
@@ -582,18 +585,19 @@ footer p {
     display: inline-block;
 }
 
-.inp{
+.inp {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.inp input{
+.inp input {
     padding: 5px;
     border-radius: 6px;
     width: 287px;
     border: 1px solid #7c7e824e;
 }
+
 .eye input {
     padding-right: 30px;
     width: 287px;
@@ -614,125 +618,126 @@ footer p {
     flex-direction: column;
 }
 
-.rem{
+.rem {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.rem img{
+.rem img {
     width: 20px;
 }
 
-.btt .btn{
+.btt .btn {
     width: 287px;
 }
 
-.politic{
+.politic {
     width: 287px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.politic p{
+.politic p {
     font-size: 12px;
 }
 
 /* catalog */
 /* фильтр */
-.filtr_cat{
+.filtr_cat {
     display: flex;
     justify-content: center;
     margin: 30px 0;
 }
 
-.filtr_cat .filtr input{
+.filtr_cat .filtr input {
     border: 1px solid #7c7e824e;
     width: 150px;
 }
 
-.filtr_cat .filtr .eye input{
+.filtr_cat .filtr .eye input {
     width: 200px;
 }
 
-.filtr_cat img{
+.filtr_cat img {
     width: 19px;
     height: 11px;
 }
 
-.pagi_block{
+.pagi_block {
     display: flex;
     justify-content: center;
     margin-top: 40px;
     margin-bottom: 120px;
 }
 
-.pagi{
+.pagi {
     display: flex;
     gap: 40px;
 }
 
-.elipcards{
+.elipcards {
     display: flex;
     gap: 10px;
 }
 
-.elipcards img{
+.elipcards img {
     width: 18px;
     height: 18px;
 }
 
 /* card */
 /* карточка */
-.product{
+.product {
     margin-top: 120px;
     display: flex;
     justify-content: space-between;
-        align-items: center;
+    align-items: center;
 }
 
-.product_book{
+.product_book {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.filtra{
+.filtra {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.filtra input{
+.filtra input {
     border: 1px solid #7c7e824e;
     width: 400px;
     padding: 10px;
     border-radius: 6px;
 }
 
-.dispinp{
+.dispinp {
     display: flex;
     gap: 15px;
 }
-.dispinp input{
+
+.dispinp input {
     border: 1px solid #7c7e824e;
     width: 192px;
 }
 
-.prisedisp p span{
+.prisedisp p span {
     color: #FF6368;
     font-weight: 600;
     margin-left: 10px;
 }
 
-.filprice{
+.filprice {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.filprice input{
+.filprice input {
     padding: 10px;
     border-radius: 6px;
     width: 287px;
@@ -740,17 +745,18 @@ footer p {
     background-color: #EBEBEB;
 }
 
-.filprice button{
+.filprice button {
     border-radius: 6px;
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
 
-.filprice button p{
+.filprice button p {
     font-weight: 600;
     font-size: 14px;
 }
+
 .eyet input {
     padding-right: 30px;
     width: 400px;
@@ -766,49 +772,49 @@ footer p {
     width: auto;
 }
 
-.telinp input{
-    width: 400px;   
+.telinp input {
+    width: 400px;
     border: 2px solid #3e3e3e4e;
-    border-radius: 6px; 
+    border-radius: 6px;
     padding: 10px;
 }
 
-.text h2{
+.text h2 {
     margin-top: 50px;
 }
 
-.red{
+.red {
     display: flex;
     gap: 15px;
 }
 
-.red p{
+.red p {
     color: #FF6368;
     font-size: 16px;
     font-weight: 500;
     margin: 15px 0;
 }
 
-.pp{
+.pp {
     display: flex;
     gap: 15px;
 }
 
-.text .btn{
+.text .btn {
     font-size: 10px;
     background-color: #2574C2;
     margin-top: 15px;
 }
 
-.txt{
+.txt {
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin-top: 15px;
-    margin-bottom: 100px;    
+    margin-bottom: 100px;
 }
 
- .rev h2 {
+.rev h2 {
     margin-bottom: 40px;
 }
 
@@ -860,4 +866,10 @@ footer p {
 
 .slid img {
     width: 60px;
-} 
+}
+
+@media (min-width: 481px){
+    .burrr{
+        display: none;
+    }
+}

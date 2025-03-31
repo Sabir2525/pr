@@ -1,0 +1,19 @@
+@media screen and (max-width:991px){
+
+    .container{
+        width: 800px;
+    }
+    
+
+    .adv_card{
+        width: 250px;
+    }
+
+    .sale_block img{
+        width: 400px;
+    }
+
+    .contact_block img{
+        width: 400px;
+    }
+}

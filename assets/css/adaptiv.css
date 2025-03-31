@@ -1,0 +1,166 @@
+@media screen and (max-width:480px) {
+    .container {
+        max-width: 360px;
+    }
+
+    header{
+        height: 100px;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    .section nav {
+        display: none;
+    }
+
+    .tel img {
+        width: 30px;
+    }
+
+    .reg img {
+        width: 15px;
+    }
+
+    .containe a {
+        font-size: 12px;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+    }
+
+    .filtr {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .adv_cards {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .about_block {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about_block img{
+        width: 350px;
+    }
+    
+    .about{
+        padding-top: 0;
+        padding: 50px;
+    }
+
+    .sale h2{
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    .sale_block{
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+    .sale_block img{
+        width: 350px;
+    }
+
+    .contact{
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    .contact h2{
+        margin-bottom: 30px;
+    }
+
+    .contact_block{
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .contact_block img{
+        background-size: cover;
+        width: 450px;
+    }
+
+    .burger-menu {
+        display: none;
+        cursor: pointer;
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .burger-menu span {
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+    }
+    
+    /* Меню для мобильных */
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transform: translateY(-100%); /* Начальная позиция меню за экраном */
+        transition: transform 0.3s ease; /* Плавное изменение положения */
+    }
+    
+    .mobile-menu nav {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .mobile-menu button {
+        width: 100%;
+    }
+    
+    /* Кнопка закрытия меню */
+    .close-menu {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    /* Стили для мобильного меню (по умолчанию скрыто) */
+    .nav-links,
+    .reg {
+        display: flex;
+        gap: 20px;
+    }
+    /* Медиа-запрос для экранов шириной до 375px */
+    @media (max-width: 480px) {
+        /* Скрываем стандартную навигацию и кнопки */
+       
+    
+        /* Показываем бургер-меню */
+        .burger-menu {
+            display: flex;
+            padding-top: 14px;
+        }
+    
+        /* Когда чекбокс выбран (меню открыто), применяем transform для плавного появления */
+        #menu-toggle:checked + .burger-menu + .mobile-menu {
+            display: block;
+            transform: translateY(0); /* Меню плавно появляется сверху вниз */
+        }
+    }
+
+}
+    
+/*  */
